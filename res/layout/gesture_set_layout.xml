@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:layout_alignParentTop="true"
+        android:background="#638EAD" >
+
+        <!-- @drawable/login_top_bg -->
+
+        <TextView
+            android:id="@+id/all_trade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="设置手势解锁"
+            android:textColor="#fff"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:text="跳过" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/title"
+        android:orientation="vertical" >
+
+        <GridView 
+            android:id="@+id/gridView"
+            android:numColumns="3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:verticalSpacing="1dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            />
+       <!--  <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <View
+                    android:background=""
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout> -->
+
+        <TextView
+            android:id="@+id/tvMsg"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:text="绘制解锁图案"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+        <org.demo.custon_view.NinePointLineView
+            android:id="@+id/nplView"
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:layout_marginBottom="40dp"
+            android:layout_weight="1.0" />
+    </LinearLayout>
+
+</RelativeLayout>
