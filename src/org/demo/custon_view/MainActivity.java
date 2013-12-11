@@ -3,8 +3,8 @@ package org.demo.custon_view;
 //import com.example.box.DisplayMessageActivity;
 
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
-import android.view.MotionEvent;
 import android.view.View;
 
 public class MainActivity extends BaseActivity {
@@ -14,6 +14,7 @@ public class MainActivity extends BaseActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
+        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
     }
  //  @Override
 //public boolean onTouchEvent(MotionEvent event) {
